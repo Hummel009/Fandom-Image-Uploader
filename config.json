@@ -1,0 +1,7 @@
+{
+	"folderPath": "D:/Img",
+	"botLogin": "Special:BotPasswords Login",
+	"botPassword": "Special:BotPasswords Password",
+	"address": "https://gotminecraftmod.fandom.com/ru/api.php",
+	"cooldown": "5"
+}
