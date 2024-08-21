@@ -59,10 +59,12 @@ fun uploadImage(
 
 	url.entity = multipartEntity
 
-	httpClient.execute(url) {
+	httpClient.execute(url) { response ->
+		val json = EntityUtils.toString(response.entity)
+
 		uriBuilder.clearParameters()
 
-		println("${file.name} was sent for uploading.")
+		println("${file.name}: $json")
 	}
 }
 
